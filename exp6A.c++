@@ -1,4 +1,3 @@
-// Student Marklist_Multilevel Inheritance
 #include <iostream>
 #include <stdio.h>
 using namespace std;
@@ -26,7 +25,7 @@ public:
     }
 };
 
-class StudentExam : public Student //Class StudentExam derived from Class Student
+class StudentExam : public Student 
 {
 public:
     int sub1, sub2, sub3, sub4, sub5, sub6;
@@ -60,7 +59,7 @@ public:
     }
 };
 
-class StudentResult : public StudentExam //Class StudentResult derived from Class StudentExam
+class StudentResult : public StudentExam 
 {
 public:
     void calculate ()
@@ -73,7 +72,7 @@ public:
 
 int main()
 {
-    StudentResult str; //Object 'str' is created of derived Class StudentResult
+    StudentResult str; 
     int cnt, i;
     cout<<"\n Enter No. of Students You Want? : ";
     cin>>cnt;
