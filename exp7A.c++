@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Base class: Person
 class Person {
 public:
     Person() {
@@ -9,7 +8,6 @@ public:
     }
 };
 
-// Derived class 1: Faculty
 class Faculty : public Person {
 public:
     Faculty() {
@@ -17,7 +15,6 @@ public:
     }
 };
 
-// Derived class 2: Student
 class Student : public Person {
 public:
     Student() {
@@ -25,7 +22,6 @@ public:
     }
 };
 
-// Derived class 3: TA (inherits from both Faculty and Student)
 class TA : public Faculty, public Student {
 public:
     TA() {
